@@ -194,6 +194,13 @@ static void handle_request(csiebox_server* server, int conn_fd) {
           //====================
         }
         break;
+      case CSIEBOX_PROTOCOL_OP_SYNC_END:
+        fprintf(stderr, "sync end\n");
+        csiebox_protocol_header end;
+          //====================
+          //        TODO
+          //====================
+        break;
       case CSIEBOX_PROTOCOL_OP_RM:
         fprintf(stderr, "rm\n");
         csiebox_protocol_rm rm;

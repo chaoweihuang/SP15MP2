@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#define default_register_port 10090
+#define default_register_port 2500
 #define register_protocol_buf_size 512
 /*
 @param port: which port you want to listen.

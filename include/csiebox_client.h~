@@ -21,7 +21,7 @@ typedef struct {
   int conn_fd;
   int client_id;
   int inotify_fd;
-  char inotify_path[100][PATH_MAX];
+  hash inotify_hash;
 } csiebox_client;
 
 void csiebox_client_init(
